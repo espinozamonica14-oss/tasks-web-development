@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario estructurado 2</title>
+</head>
+<body>
+    <header>
+    <a href="../index.html">← Volver al inicio</a>
+    <hr>  
+    </header>
+    <main>
+        <h1>Rellena tu CV</h1>
+        <form action="#" method="get">
+            <fieldset>
+            <legend>Datos Personales</legend>
+            <p>
+            <label for="provincia">Provincia</label>
+            <select name="provincia" id="provincia">
+                <option value="-">-</option>
+                <option value="la">Lima</option>
+                <option value="ba">Barranca</option>
+                <option value="co">Cajatambo</option>
+                <option value="ca">Canta</option>
+                <option value="ce">Cañete</option>
+                <option value="hl">Huaral</option>
+                <option value="hi">Huarochiri</option>
+                <option value="ha">Huaura</option>
+                <option value="on">Oyón</option>
+                <option value="ys">Yauyos</option>
+                
+            </select>
+            </p>
+            <p>
+                Fecha de Nacimiento<br>
+                <input type="text" name="dia" size="2">
+                de 
+                <select name="mes" id="mes">
+                    <option value="0">-</option>
+                    <option value="1">Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Setiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+                de 
+                <input type="text" name="year" size="4">
+            </p>
+            <p>
+                <label for="temas">Temas de Interés</label><br>
+                <select name="temas" id="temas" size="5" multiple>
+                    <option value="1">Administración de base de datos</option>
+                    <option value="2">Análisis y programación</option>
+                    <option value="3">Arquitectura</option>
+                    <option value="4">Calidad</option>
+                    <option value="5">ERP,CRM</option>
+                </select>
+            </p>
+    
+           </fieldset>
+           
+           <button type="submit">Enviar</button>
+        </form>
+    </main>  
+   <hr>
+    <footer>
+        @2026 todos los derechos reservados
+    </footer>
+</body>
+
+</html>
