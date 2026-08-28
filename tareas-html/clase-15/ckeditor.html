@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas interactivas</title>
+    <meta name="description" content="Ejercicios vistos en clase: Etiquetas Interactivas">
+    <meta name="theme-color" content="#1e7bbf">
+
+    <!-- CDN oficial de CKEditor 5 -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Ejercicios de Etiquetas interactivas</h1>
+        <a href="../index.html">← Volver al inicio</a>
+        <hr>  
+    </header>
+
+    <main>
+        <h2>Ejemplo de CKEditor</h2>
+        <p>
+            <label for="description">Descripción:</label><br>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+        </p>
+    </main>  
+
+    <hr>
+    <footer>
+        <p>&copy; 2026 Todos los derechos reservados</p>
+    </footer>
+
+    <!-- Script de inicialización -->
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#description'))
+            .then(editor => {
+                console.log('CKEditor se cargó correctamente', editor);
+            })
+            .catch(error => {
+                console.error('Error al cargar CKEditor:', error);
+            });
+    </script>
+</body>
+
+</html>

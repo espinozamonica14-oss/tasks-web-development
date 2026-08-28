@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <!-- Título para el navegador y los buscadores -->
+    <title>Etiquetas interactivas</title>
+    <meta name="description" content="Ejercicios vistos en clase: Etiquetas Interactivas">
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+
+<script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js">
+</script>
+
+</head>
+
+<body>
+    <header>
+    <h1>Ejercicios de Etiquetas interactivas</h1>
+    <a href="../index.html">← Volver al inicio</a>
+    <hr>  
+    </header>
+    <main>
+    
+      <H2>Ejemplo de select2</H2>
+     <p>
+        Selecciona tu lenguage favorito:
+        <select name="" id="weblangs">
+            <option value="">-</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+
+     </p>
+    </main>  
+   <hr>
+    <footer>
+       <p>&copy; 2026 Todos los derechos reservados</p>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('#weblangs').select2();
+        }
+
+        )
+    </script>
+
+</body>
+
+</html>
