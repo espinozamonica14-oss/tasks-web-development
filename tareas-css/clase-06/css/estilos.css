@@ -1,0 +1,51 @@
+/* Selecciona un div que sea hijo directo de otro div */
+div > div {
+  border: 2px solid blue;
+}
+/*selecciona los hijos de los elementos p*/
+p > * {
+  border:2px solid red;
+}
+
+/*Selecciona los elementos p que son hijos de article*/
+article > p {
+    border:2px solid green;
+}
+
+/* seleccionar los titulos h1 y h3*/
+h1, h3 {
+    border:2px solid  blueviolet;
+}
+
+/* selecciona los ol que esten dentro de body*/
+body > ol {
+    border:1px solid pink;
+}
+
+.amarillo {
+    border:2px solid yellow;
+}
+
+body > ul {
+    background-color:yellowgreen;
+}
+p > a {
+    background-color: goldenrod;
+}
+
+#platano {
+    background-color: brown;
+}
+
+body > h2 ~ div {
+border: 2px solid paleturquoise;
+}
+
+ul p.paisa {
+ border: 2px solid cornflowerblue;
+  
+}
+
+h1.ttitle, h2.ttitle, h3.ttitle {
+background-color: orangered;    
+}
