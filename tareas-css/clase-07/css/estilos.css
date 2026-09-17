@@ -1,0 +1,75 @@
+li:first-child a{
+    color:blue;
+}
+li:last-child a {
+    color:pink;
+}
+li:nth-child(2) a {
+    color: yellowgreen;
+}
+li:nth-last-child(2) a {
+    color:blueviolet;
+}
+li:nth-child(3n) a {
+    color:red;
+
+}
+.container div:first-of-type{
+    border:1px solid yellowgreen;
+}
+
+.container p:first-of-type{
+    border:1px solid orange;
+}
+
+.container :first-of-type{
+    border:1px solid red;
+}
+
+.container :nth-of-type(2){
+    border:1px solid brown;
+}
+
+section *:only-of-type{
+    color:grey;
+}
+*:empty{
+    color: blue;
+}
+p a:first-of-type{
+    color:blueviolet;
+}
+form > input[type="checkbox"]:checked+label{
+    color:blue;
+}
+article p:last-of-type{
+    color:aquamarine;
+}
+
+section > *:nth-child(2) {
+  background-color: brown;
+}
+
+ol > *:nth-child(2n){
+    color:yellowgreen;
+}
+
+ul > li:nth-last-child(3) {
+  color:yellow;
+}
+p a:nth-of-type(2){
+    border:1px solid pink;
+}
+
+button:only-child{
+    color:aqua;
+}
+
+p > span:first-child{
+color:blueviolet;
+}
+
+body > *:nth-last-child(2){
+    border: 4px solid red;
+  background-color: yellow;
+}
